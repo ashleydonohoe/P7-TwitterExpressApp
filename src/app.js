@@ -6,11 +6,11 @@ const config = require("./config.js");
 
 let Twitter = new Twit(config);
 const twitOptions = {
-    "screen_name": "GS_HelloKitty",
+    "screen_name": "ashleydonohoe12",
     "count": 5
 };
 
-const screenName = "GS_HelloKitty";
+const screenName = "ashleydonohoe12";
 
 let app = express();
 app.use(express.static(__dirname + "/public"));
@@ -18,6 +18,7 @@ app.use(express.static(__dirname + "/public"));
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/templates');
 
+// Variables for collecting info from the requests
     let recentTweets;
     let friends;
     let messages;
@@ -57,24 +58,19 @@ app.set('views', __dirname + '/templates');
             Twitter.get("direct_messages", {"count": 5}, function (error, data, response) {
                 if (!error) {
                     messages = data;
-                    console.log(messages);
-                    // Message variables needed for each message
-                    // Sender's profile image: sender[profile_image_url]
-                    // Message body: text
-                    // Date sent: sender["created_at"]
                 } else {
                     console.log("error getting messages");
                 }
-
             }); // End direct message retrieval
-
         }); // End friends list request
     }); // end recent tweets request
 
         app.get("/", function(req, res) {
-            res.render("index", {userAvatarURL: userAvatarURL, screenName: screenName, userName: userName, userFriends: userFriends, backgroundImageURL: backgroundImageURL, tweets: recentTweets, friends: friends, messages: messages});
+            res.render("index",
+                {userAvatarURL: userAvatarURL,
+                    screenName: screenName, userName: userName, userFriends: userFriends, backgroundImageURL: backgroundImageURL, tweets: recentTweets, friends: friends, messages: messages});
         }); // end "/" request
-    }); // End user profile lookup
+    }); // End initial user profile lookup
 
 
 app.listen(3000, function() {
