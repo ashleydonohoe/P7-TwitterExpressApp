@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08cbd172-a615-4689-b000-e4a4b4a0505c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/index.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/circle/core/docs.css" afterPath="$PROJECT_DIR$/src/public/css/circle/core/docs.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/global.css" afterPath="$PROJECT_DIR$/src/public/css/global.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/add.svg" afterPath="$PROJECT_DIR$/src/public/images/add.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/arrow-right.svg" afterPath="$PROJECT_DIR$/src/public/images/arrow-right.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/chevron.svg" afterPath="$PROJECT_DIR$/src/public/images/chevron.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/f-spore.ai" afterPath="$PROJECT_DIR$/src/public/images/f-spore.ai" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/f-spore.png" afterPath="$PROJECT_DIR$/src/public/images/f-spore.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/heart.svg" afterPath="$PROJECT_DIR$/src/public/images/heart.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/like.svg" afterPath="$PROJECT_DIR$/src/public/images/like.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/m-spore.ai" afterPath="$PROJECT_DIR$/src/public/images/m-spore.ai" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/m-spore.png" afterPath="$PROJECT_DIR$/src/public/images/m-spore.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/message-tail-me.svg" afterPath="$PROJECT_DIR$/src/public/images/message-tail-me.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/message-tail.svg" afterPath="$PROJECT_DIR$/src/public/images/message-tail.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/reply.svg" afterPath="$PROJECT_DIR$/src/public/images/reply.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/retweet.svg" afterPath="$PROJECT_DIR$/src/public/images/retweet.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/search.svg" afterPath="$PROJECT_DIR$/src/public/images/search.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/star.svg" afterPath="$PROJECT_DIR$/src/public/images/star.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/twitter.svg" afterPath="$PROJECT_DIR$/src/public/images/twitter.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/src/public/css/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.js" afterPath="$PROJECT_DIR$/src/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/index.jade" afterPath="$PROJECT_DIR$/src/templates/index.jade" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,28 +21,57 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/templates/index.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="411">
+                  <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/templates/index.jade">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="810">
+                  <caret line="109" column="50" lean-forward="false" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+                  <folding>
+                    <marker date="1489899788000" expanded="true" signature="6013:6729" ph="..." />
+                    <marker date="1489899788000" expanded="true" signature="6039:6729" ph="..." />
+                    <marker date="1489899788000" expanded="true" signature="6058:6729" ph="..." />
+                    <marker date="1489899788000" expanded="true" signature="6148:6729" ph="..." />
+                    <marker date="1489899788000" expanded="true" signature="6187:6729" ph="..." />
+                    <marker date="1489899788000" expanded="true" signature="6236:6593" ph="..." />
+                    <marker date="1489899788000" expanded="true" signature="6293:6593" ph="..." />
+                    <marker date="1489899788000" expanded="true" signature="6667:6729" ph="..." />
+                    <marker date="1489899788000" expanded="true" signature="6913:6992" ph="..." />
+                    <marker date="1489899788000" expanded="true" signature="7146:7474" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/templates/index.jade">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-685">
+                  <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -94,9 +104,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1036" />
-    <option name="y" value="223" />
-    <option name="width" value="1407" />
+    <option name="x" value="611" />
+    <option name="y" value="242" />
+    <option name="width" value="1684" />
     <option name="height" value="1082" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -285,7 +295,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489808330441</updated>
-      <workItem from="1489808331798" duration="5796000" />
+      <workItem from="1489808331798" duration="11148000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1489808419844</created>
@@ -315,11 +325,25 @@
       <option name="project" value="LOCAL" />
       <updated>1489811876741</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="styles are working now">
+      <created>1489894356398</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1489894356398</updated>
+    </task>
+    <task id="LOCAL-00006" summary="template for columns added">
+      <created>1489897612557</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1489897612557</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5796000" />
+    <option name="totallyTimeSpent" value="11148000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,10 +355,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1036" y="223" width="1407" height="1082" extended-state="0" />
+    <frame x="611" y="242" width="1684" height="1082" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24819624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20685509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929292" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -363,7 +387,9 @@
     <MESSAGE value="working on config for Twit" />
     <MESSAGE value="basic express app setup" />
     <MESSAGE value="Have Twitter API getting the needed objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Have Twitter API getting the needed objects" />
+    <MESSAGE value="styles are working now" />
+    <MESSAGE value="template for columns added" />
+    <option name="LAST_COMMIT_MESSAGE" value="template for columns added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -487,18 +513,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.js">
+    <entry file="file://$PROJECT_DIR$/src/templates/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="810">
+          <caret line="109" column="50" lean-forward="false" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+          <folding>
+            <marker date="1489899788000" expanded="true" signature="6013:6729" ph="..." />
+            <marker date="1489899788000" expanded="true" signature="6039:6729" ph="..." />
+            <marker date="1489899788000" expanded="true" signature="6058:6729" ph="..." />
+            <marker date="1489899788000" expanded="true" signature="6148:6729" ph="..." />
+            <marker date="1489899788000" expanded="true" signature="6187:6729" ph="..." />
+            <marker date="1489899788000" expanded="true" signature="6236:6593" ph="..." />
+            <marker date="1489899788000" expanded="true" signature="6293:6593" ph="..." />
+            <marker date="1489899788000" expanded="true" signature="6667:6729" ph="..." />
+            <marker date="1489899788000" expanded="true" signature="6913:6992" ph="..." />
+            <marker date="1489899788000" expanded="true" signature="7146:7474" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/index.jade">
+    <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="411">
+          <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
           <folding />
         </state>
       </provider>
