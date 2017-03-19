@@ -9,41 +9,48 @@ const twitOptions = {
     "screen_name": "GS_HelloKitty",
     "count": 5
 };
+
 const screenName = "GS_HelloKitty";
 
 let app = express();
+app.use(express.static(__dirname + "/public"));
 
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/templates');
 
-app.get("/", function(req, res) {
+    let recentTweets;
+    let friends;
+    let messages;
+
 
     // Get 5 most recent tweets
     Twitter.get("statuses/user_timeline", twitOptions, function(error, data, response) {
         if(!error) {
-            let recentTweets = data;
+            recentTweets = data;
         }
 
         // Get 5 Friends
         Twitter.get("friends/list", twitOptions, function(error, data, response) {
             if(!error) {
-                let friends = data.users;
+                friends = data.users;
 
                 // TODO: Need to get profile image, real name, and screen name of each friend
             }
 
          // Get 5 most recent direct messages
         Twitter.get("direct_messages", {"count": 5}, function(error, data, response) {
-            let messages = data;
+            messages = data;
         }); // End direct message retrieval
 
         }); // End friends list request
+
+        app.get("/", function(req, res) {
+            console.log(messages);
+            // console.log(friends);
+            // console.log(recentTweets);
+            res.render("index", {screenName: screenName});
+        }); // end "/" request
     }); // End recent tweets request
-
-    res.send("Done");
-
-
-});
 
 
 app.listen(3000, function() {
