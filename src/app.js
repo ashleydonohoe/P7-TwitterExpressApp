@@ -18,6 +18,9 @@ app.use(express.static(__dirname + "/public"));
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/templates');
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+
 // Variables for collecting info from the requests
     let recentTweets;
     let friends;
@@ -71,6 +74,14 @@ app.set('views', __dirname + '/templates');
                     screenName: screenName, userName: userName, userFriends: userFriends, backgroundImageURL: backgroundImageURL, tweets: recentTweets, friends: friends, messages: messages});
         }); // end "/" request
     }); // End initial user profile lookup
+
+
+
+// Request for posting a tweet
+app.post("/", function(req, res) {
+    const tweetBody = req.body.message;
+    console.log(tweetBody);
+});
 
 
 app.listen(3000, function() {
