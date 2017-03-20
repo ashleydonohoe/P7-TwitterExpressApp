@@ -1,5 +1,5 @@
-// checks for new updates every 30 seconds
-setTimeout(reload, 30000);
+// checks for new updates every 90 seconds
+setTimeout(reload, 90000);
 
 function reload() {
     window.location.reload(true);

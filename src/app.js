@@ -6,6 +6,12 @@ const config = require("./config.js");
 
 let Twitter = new Twit(config);
 
+const twitOptions = {
+    "screen_name": "ENTER TWITTER SCREENNAME",
+    "count": 5
+};
+
+const screenName = "ENTER TWITTER SCREENNAME";
 
 let app = express();
 app.use(express.static(__dirname + "/public"));
@@ -16,7 +22,9 @@ app.set('views', __dirname + '/templates');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-// Variables for collecting info from the requests
+app.get("/", function(req, res) {
+
+    // Variables for collecting info from the requests
     let recentTweets;
     let friends;
     let messages;
@@ -27,7 +35,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
     // Get user info
     Twitter.get("users/lookup", {screen_name: screenName}, function(error, data, response) {
-        if(!error) {
+        if (!error) {
             userName = data[0].name;
             userFriends = data[0].friends_count;
             backgroundImageURL = data[0].profile_background_image_url;
@@ -36,41 +44,42 @@ app.use(bodyParser.urlencoded({extended: true}));
             console.log("Error getting user info");
         }
 
-    // Get 5 most recent tweets
-    Twitter.get("statuses/user_timeline", twitOptions, function(error, data, response) {
-        if (!error) {
-            recentTweets = data;
-        } else {
-            console.log("Error getting tweets");
-        }
 
-        // Get 5 Friends
-        Twitter.get("friends/list", twitOptions, function (error, data, response) {
+        // Get 5 most recent tweets
+        Twitter.get("statuses/user_timeline", twitOptions, function(error, data, response) {
             if (!error) {
-                friends = data.users;
+                recentTweets = data;
             } else {
-                console.log("Error getting friends");
-                console.log(error);
+                console.log("Error getting tweets");
             }
 
-            // Get 5 most recent direct messages
-            Twitter.get("direct_messages", {"count": 5}, function (error, data, response) {
+            // Get 5 Friends
+            Twitter.get("friends/list", twitOptions, function (error, data, response) {
                 if (!error) {
-                    messages = data;
+                    friends = data.users;
                 } else {
-                    console.log("error getting messages");
+                    console.log("Error getting friends");
+                    console.log(error);
                 }
-            }); // End direct message retrieval
-        }); // End friends list request
-    }); // end recent tweets request
 
-        app.get("/", function(req, res) {
-            res.render("index",
-                {userAvatarURL: userAvatarURL,
-                    screenName: screenName, userName: userName, userFriends: userFriends, backgroundImageURL: backgroundImageURL, tweets: recentTweets, friends: friends, messages: messages});
-        }); // end "/" request
-    }); // End initial user profile lookup
+                // Get 5 most recent direct messages
+                Twitter.get("direct_messages", {"count": 5}, function (error, data, response) {
+                    if (!error) {
+                        messages = data;
+                    } else {
+                        console.log("error getting messages");
+                    }
 
+                    // Render page once all requests are complete
+                    res.render("index",
+                        {userAvatarURL: userAvatarURL,
+                            screenName: screenName, userName: userName, userFriends: userFriends, backgroundImageURL: backgroundImageURL, tweets: recentTweets, friends: friends, messages: messages});
+
+                }); // End direct message retrieval
+            }); // End friend request
+        }); // End status request
+    }); // end lookup
+}); // End get "/"
 
 
 // Request for posting a tweet
