@@ -129,15 +129,13 @@ body
                                 | Conversation with
                                 a #{" " + userName}
                             ul.app--message--conversation
-                                // If from someone else
-                                li.app--message
-                                    .app--avatar(style='background-image: url(#{message.sender.profile_image_url})')
-                                        img(src='images/f-spore.png')
-                                    p.app--message--text #{message.text}
-                                    p.app--message--timestamp #{message.sender.created_at}
-                                    // If from me
-                                li.app--message--me
-                                    .app--avatar(style='background-image: url(images/m-spore.png)')
-                                        img(src='images/m-spore.png')
-                                    p.app--message--text #{message.text}
-                                    p.app--message--timestamp #{message.sender.created_at}
+                                if(message.sender.screen_name !== screenName)
+                                    li.app--message
+                                        .app--avatar(style='background-image: url(#{message.sender.profile_image_url})')
+                                        p.app--message--text #{message.text}
+                                        p.app--message--timestamp #{message.sender.created_at}
+                                 else
+                                    li.app--message--me
+                                        .app--avatar(style='background-image: url(#{message.sender.profile_image_url})')
+                                        p.app--message--text #{message.text}
+                                        p.app--message--timestamp #{message.sender.created_at}

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="08cbd172-a615-4689-b000-e4a4b4a0505c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.js" afterPath="$PROJECT_DIR$/src/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/public/js/app.js" afterPath="$PROJECT_DIR$/src/public/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/index.jade" afterPath="$PROJECT_DIR$/src/templates/index.jade" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -46,8 +44,8 @@
       <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2220">
-              <caret line="135" column="35" lean-forward="true" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+            <state relative-caret-position="2190">
+              <caret line="133" column="120" lean-forward="false" selection-start-line="133" selection-start-column="120" selection-end-line="133" selection-end-column="120" />
               <folding />
             </state>
           </provider>
@@ -103,8 +101,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="973" />
-    <option name="y" value="116" />
+    <option name="x" value="972" />
+    <option name="y" value="145" />
     <option name="width" value="1345" />
     <option name="height" value="1082" />
   </component>
@@ -316,7 +314,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489808330441</updated>
-      <workItem from="1489808331798" duration="15186000" />
+      <workItem from="1489808331798" duration="15534000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1489808419844</created>
@@ -395,11 +393,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489974032485</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="working on fixing bug with reloading page">
+      <created>1489976664946</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1489976664946</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15186000" />
+    <option name="totallyTimeSpent" value="15534000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,7 +416,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="973" y="116" width="1345" height="1082" extended-state="0" />
+    <frame x="972" y="145" width="1345" height="1082" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25981873" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -467,7 +472,8 @@
     <MESSAGE value="added temporary function to reload tweetdata on interval. Will tweak this later" />
     <MESSAGE value="updated reload to every 30 seconds" />
     <MESSAGE value="working on form functionality for posting a tweet" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on form functionality for posting a tweet" />
+    <MESSAGE value="working on fixing bug with reloading page" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on fixing bug with reloading page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -593,8 +599,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="135" column="35" lean-forward="true" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+        <state relative-caret-position="2190">
+          <caret line="133" column="120" lean-forward="false" selection-start-line="133" selection-start-column="120" selection-end-line="133" selection-end-column="120" />
           <folding />
         </state>
       </provider>
