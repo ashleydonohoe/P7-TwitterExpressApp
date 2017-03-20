@@ -5,12 +5,7 @@ const bodyParser = require("body-parser");
 const config = require("./config.js");
 
 let Twitter = new Twit(config);
-const twitOptions = {
-    "screen_name": "ashleydonohoe12",
-    "count": 5
-};
 
-const screenName = "ashleydonohoe12";
 
 let app = express();
 app.use(express.static(__dirname + "/public"));
@@ -55,6 +50,7 @@ app.use(bodyParser.urlencoded({extended: true}));
                 friends = data.users;
             } else {
                 console.log("Error getting friends");
+                console.log(error);
             }
 
             // Get 5 most recent direct messages
@@ -81,7 +77,20 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.post("/", function(req, res) {
     const tweetBody = req.body.message;
     console.log(tweetBody);
+
+    Twitter.post("statuses/update", {status: tweetBody}, function(error, data, response) {
+    if(!error) {
+        console.log(data);
+    } else {
+        console.log("Tweet could not be posted");
+        console.log(error);
+    }
+
+    // Reloads page. There's a delay due to how Twitter API is set up
+    res.redirect("/");
+    });
 });
+
 
 
 app.listen(3000, function() {
