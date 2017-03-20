@@ -100,6 +100,10 @@ app.post("/", function(req, res) {
     });
 });
 
+app.get("*", function(req, res) {
+    res.send("Sorry, this page does not exist");
+});
+
 
 
 app.listen(3000, function() {
